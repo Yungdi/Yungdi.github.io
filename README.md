@@ -6,6 +6,8 @@ Executor.execute 와 ExecutorService.submit 은 예외 처리 전략에 차이�
 Executor.execute 의 기본 처리 전략은 예외 발생 시 UncaughtExceptionHandler 가 stacktrace 를 콘솔에 출력한다. (custom handler 사용 가능) 
 ExecutorService.submit 는 Future 의 get 메소드 호출 시 ExecutionException 발생시킨다.
 <T> Future<T> submit(Runnable task, T result) 는 왜 존재할까? 
+```
+
 ```java
 public interface ExecutorService {
     <T> Future<T> submit(Runnable task, T result);
