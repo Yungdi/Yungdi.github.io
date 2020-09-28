@@ -1,11 +1,15 @@
-## Yung-Di 기술 블로그
-### 병렬 프로그래밍    
+병렬 프로그래밍
+===========
 #### Executor.execute (진행시켜! (나몰라라...)) vs ExecutorService.submit (공손하게 제출하면서 진행상황 및 종료여부를 확인할 수 있는 Future 를 돌려줌)
 ```
 Executor.execute 와 ExecutorService.submit 은 예외 처리 전략에 차이가 있다.  
 Executor.execute 의 기본 처리 전략은 예외 발생 시 UncaughtExceptionHandler 가 stacktrace 를 콘솔에 출력한다. (custom handler 사용 가능) 
 ExecutorService.submit 는 Future 의 get 메소드 호출 시 ExecutionException 발생시킨다.
-<T> Future<T> submit(Runnable task, T result) 는 왜 존재할까? 
+```
+
+**의문점**
+``` 
+ExecutorService 의 <T> Future<T> submit(Runnable task, T result) 는 왜 존재할까? 설계 목적이 뭘까? 
 ```
 
 ```java
@@ -13,7 +17,25 @@ public interface ExecutorService {
     <T> Future<T> submit(Runnable task, T result);
 }
 ```
-
+  
+#
+#    
+#     
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 ========================  
 You can use the [editor on GitHub](https://github.com/Yungdi/Yungdi.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
