@@ -17,25 +17,8 @@ public interface ExecutorService {
     <T> Future<T> submit(Runnable task, T result);
 }
 ```
-  
-#
-#    
-#     
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+#### 용어 정리
+- 처리량(throughput): 병렬로 
 ========================  
 You can use the [editor on GitHub](https://github.com/Yungdi/Yungdi.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
