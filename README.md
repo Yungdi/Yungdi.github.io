@@ -30,5 +30,5 @@ public interface ExecutorService {
 - 처리량(throughput): 병렬로 실행되는 여러개의 작업 각자가 작업을 끝내는 속도
 - 응답성(responsiveness): 요청이 들어온 이후 작업을 마치고 결과를 줄 때까지의 시간. = latency
 - 확장성(scalability): 자원을 확보할 때마다 그에 따라 처리할 수 있는 작업량이 늘어나는 정도
-- 활동성(liveness):
-- 안전성(safety): 
+- 활동성(liveness): 프로그램 또는 객체가 끝가지 멈추지 않고 원하는 결과를 만들어 낼 수 있는지(활동성 장애: 데드락)
+- 안전성(safety): 프로그램이 의도한 대로 동작, 스레드 스케줄링에 관계없이 원하는 대로 동작
