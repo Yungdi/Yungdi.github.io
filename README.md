@@ -36,7 +36,7 @@ public interface ExecutorService {
 ETC
 ===========
 #### Jackson 에서 null value 직렬화 하지 않도록 설정
-```
+```java
 @Configuration
 public class JacksonConfig {
 
