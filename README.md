@@ -33,6 +33,20 @@ public interface ExecutorService {
 - 활동성(liveness): 프로그램 또는 객체가 끝가지 멈추지 않고 원하는 결과를 만들어 낼 수 있는지(활동성 장애: 데드락)
 - 안전성(safety): 프로그램이 의도한 대로 동작, 스레드 스케줄링에 관계없이 원하는 대로 동작
 
+TEST
+===========
+#### 실패 테스트 케이스, private 메소드 테스트
+```java
+@Test
+    public void wsinProductThrowNPETest() {
+        AggregatedBrandIntegrator aggregatedBrandIntegrator = new AggregatedBrandIntegrator(null);
+        Predicate<Product> wsinBrandId = ReflectionTestUtils.invokeMethod(aggregatedBrandIntegrator, "wsinBrandId");
+        Assertions.assertNotNull(wsinBrandId);
+        // given: product is null
+        Assertions.assertThrows(NullPointerException.class, () -> wsinBrandId.test(null));
+    }
+```
+
 ETC
 ===========
 #### Jackson 에서 null value 직렬화 하지 않도록 설정
