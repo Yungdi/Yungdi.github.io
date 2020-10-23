@@ -32,3 +32,19 @@ public interface ExecutorService {
 - 확장성(scalability): 자원을 확보할 때마다 그에 따라 처리할 수 있는 작업량이 늘어나는 정도
 - 활동성(liveness): 프로그램 또는 객체가 끝가지 멈추지 않고 원하는 결과를 만들어 낼 수 있는지(활동성 장애: 데드락)
 - 안전성(safety): 프로그램이 의도한 대로 동작, 스레드 스케줄링에 관계없이 원하는 대로 동작
+
+ETC
+===========
+#### Jackson 에서 null value 직렬화 하지 않도록 설정
+```
+@Configuration
+public class JacksonConfig {
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.setSerializationInclusion(Include.NON_NULL);
+        return objectMapper;
+    }
+}
+```
