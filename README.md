@@ -38,13 +38,13 @@ TEST
 #### 실패 테스트 케이스, private 메소드 테스트
 ```java
 @Test
-    public void wsinProductThrowNPETest() {
-        AggregatedBrandIntegrator aggregatedBrandIntegrator = new AggregatedBrandIntegrator(null);
-        Predicate<Product> wsinBrandId = ReflectionTestUtils.invokeMethod(aggregatedBrandIntegrator, "wsinBrandId");
-        Assertions.assertNotNull(wsinBrandId);
-        // given: product is null
-        Assertions.assertThrows(NullPointerException.class, () -> wsinBrandId.test(null));
-    }
+public void wsinProductThrowNPETest() {
+    AggregatedBrandIntegrator aggregatedBrandIntegrator = new AggregatedBrandIntegrator(null);
+    Predicate<Product> wsinBrandId = ReflectionTestUtils.invokeMethod(aggregatedBrandIntegrator, "wsinBrandId");
+    Assertions.assertNotNull(wsinBrandId);
+    // given: product is null
+    Assertions.assertThrows(NullPointerException.class, () -> wsinBrandId.test(null));
+}
 ```
 
 ETC
