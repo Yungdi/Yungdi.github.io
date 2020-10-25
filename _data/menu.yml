@@ -7,7 +7,6 @@ entries:
     entries:
       - title: java, concurrency
         url: false
-      - title: email: yun27jin@gmail.com
       - title: github
         url: https://github.com/Yungdi
       - title: github page
@@ -23,14 +22,3 @@ entries:
     entries:
       - title: java
         url: false
-        entries:
-          - title: 병렬 프로그래밍
-            url: false
-            entries:
-              - title: Executor, ExecutorService, AbstractExecutorService, ThreadPoolExecutor
-                url: ../README.md
-          - title: 잡동사니
-            url: false
-            entries:
-              - title: Future, FutureTask
-                url: ../README.md
