@@ -5,33 +5,25 @@ entries:
   - title: info
     url: false
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
+      - title: java
         url: false
       - title: github
-        url: https://github.com/riggraz/no-style-please
-      - title: used by riggraz.dev
-        url: https://riggraz.dev/
+        url: https://github.com/Yungdi
+      - title: github page
+        url: https://yungdi.github.io/
 
-  - title: thoughts
+  - title: 생각
     post_list: true
     url: false
     entries: false
-
-  - title: rss
-    url: feed.xml
   
-  - title: another list
+  - title: 기술
     url: false
     entries:
-      - title: with subitems
+      - title: java
         url: false
         entries:
-          - title: with subsubitems
+          - title: 병렬 프로그래밍
             url: false
-          - title: example page
-            url: about
-  - title: PRO TIP
-    url: false
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
-        url: false
+          - title: ETC
+            url: false
