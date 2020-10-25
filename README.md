@@ -49,7 +49,7 @@ public void wsinProductThrowNPETest() {
 
 ETC
 ===========
-#### Jackson 에서 null value 직렬화 하지 않도록 설정
+#### ObjectMapper 에서 null value 직렬화 하지 않도록 설정
 ```java
 @Configuration
 public class JacksonConfig {
@@ -58,6 +58,34 @@ public class JacksonConfig {
     public ObjectMapper objectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setSerializationInclusion(Include.NON_NULL);
+        return objectMapper;
+    }
+}
+```
+#### ObjectMapper 에서 특정 타입에 대한 Serializer 등록
+```java
+public class LocalDateTimeSerializer extends JsonSerializer<LocalDateTime> {
+
+    @Override
+    public void serialize(LocalDateTime value, JsonGenerator gen, SerializerProvider serializerProvider)
+        throws IOException {
+        gen.writeString(localDateTimeToString(value));
+    }
+
+    private String localDateTimeToString(LocalDateTime value) {
+        return value.toString();
+    }
+}
+
+@Configuration
+public class JacksonConfig {
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        SimpleModule simpleModule = new SimpleModule();
+        simpleModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer());
+        objectMapper.registerModule(simpleModule);
         return objectMapper;
     }
 }
