@@ -1,8 +1,7 @@
-remote_theme: riggraz/no-style-please
+theme: jekyll-theme-midnight
 
 title: consistently... 
 description: 2020.10.23 ~
 
 author:
   email: yun27jin@gmail.com
-  name: yunjin
