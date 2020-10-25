@@ -25,7 +25,7 @@ entries:
         url: false
         entries:
           - title: 병렬 프로그래밍
-            url: false
+            url: ../README.md
           - title: spring
             url: false
           - title: 잡동사니
