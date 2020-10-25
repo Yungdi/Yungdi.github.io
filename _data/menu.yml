@@ -2,11 +2,12 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: info
+  - title: 소개
     url: false
     entries:
-      - title: java
+      - title: java, concurrency
         url: false
+      - title: email: yun27jin@gmail.com
       - title: github
         url: https://github.com/Yungdi
       - title: github page
@@ -25,5 +26,7 @@ entries:
         entries:
           - title: 병렬 프로그래밍
             url: false
-          - title: ETC
+          - title: spring
+            url: false
+          - title: 잡동사니
             url: false
