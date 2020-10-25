@@ -25,8 +25,12 @@ entries:
         url: false
         entries:
           - title: 병렬 프로그래밍
-            url: ../README.md
-          - title: spring
             url: false
+            entries:
+              - title: Executor, ExecutorService, AbstractExecutorService, ThreadPoolExecutor
+                url: ../README.md
           - title: 잡동사니
             url: false
+            entries:
+              - title: Future, FutureTask
+                url: ../README.md
