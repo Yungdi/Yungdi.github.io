@@ -1,6 +1,4 @@
 2020-10-29 00:13 목요일
-
-# Future Interface Cancellation Policy
 ```java
 public interface Future<V> {
   V get() throws ExecutionException, InterruptedException;
