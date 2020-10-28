@@ -9,16 +9,8 @@ entries:
         url: false
       - title: github
         url: https://github.com/Yungdi
-      - title: github page
-        url: https://yungdi.github.io/
 
-  - title: 생각
+  - title: 게시글
     post_list: true
     url: false
     entries: false
-  
-  - title: 기술
-    url: false
-    entries:
-      - title: java
-        url: false
