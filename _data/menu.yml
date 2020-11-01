@@ -8,7 +8,7 @@ entries:
       - title: java, concurrency
         url: false
       - title: github
-        url: https://github.com/Yungdi
+        url: https://github.com/future-box
 
   - title: 게시글
     post_list: true
