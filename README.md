@@ -90,3 +90,32 @@ public class JacksonConfig {
     }
 }
 ```
+# 4. Configuring and Running Job
+> Job 은 단순히 Step 들을 담고 있는 컨테이너이지만 여러 선택가능한 설정이 있다.    
+> 잡이 어떻게 실행되는 지 … 런타임에 메타데이터가 어떻게 적재되는 지? 에 대해 알아봅시다  
+## 4.1 Configuring a Job
+> Job 인터페이스에는 구현체가 많다… SimpleJob, JobFlow…  
+
+### Restartability
+### Intercepting Job Execution
+### JobParametersValidator
+## 4.2 Job Config
+> @EnableBatchProcessing 은 Job 생성을 위한 여러 Bean 들을 생성해준다.  
+- JobRepository
+- JobLauncher
+- JobRegistry
+- TransactionManager
+- JobBuilderFactory
+- StepBuilderFactory
+
+## 4.3 Configuring a JobRepository
+JobRepositoryFactoryBean
+### Transaction 설정
+[Spring 트랜잭션 관리의 이해 - 실전편 :: 레이피엘의 블로그](https://reiphiel.tistory.com/entry/understanding-of-spring-transaction-management-practice)
+### Changing the Table Prefix
+### In-Memory Repository
+### ~~Non-Standard Repository~~
+## 4.4 Configurating a JobLauncher
+## 4.5 Running a Job
+## 4.6 Advanced Meta-Data Uasage
+#spring/batch/chapter4
